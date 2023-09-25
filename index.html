@@ -1,76 +1,101 @@
-<!DOCTYPE html>
-<html>
-<head>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Module 3</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-</head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
-
-
+    <title>Assignment Module 3</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
 <body>
-<!--Module 3 Coding Assignment-->
 
-<nav class="navbar" id="top">
-  <div class="container-fluid">
+ <header id="top">
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header"> 
+          <a class="navbar-brand" href="#">Food, LLC</a>
 
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="#">Food, LLC</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#chicken">Chicken</a>
+            </li>
+            <li>
+              <a href="#beef">Beef</a>
+            </li>
+            <li>
+              <a href="#sushi">Sushi</a>
+            </li>            
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+  
+  <div id="main-content" class="container">
+  <h2 class="text-center">Our Menu</h2>
+  <div class="row">
+    <section id="chicken" class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+    <div class="content-cell">
+    <h3 class="text-center">Chicken</h3>
+    <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+    <h3>Chicken xxxxxxxxxxxxxxx</h3>
+    <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+
+    <a href="#top">Back To Top</a>
     </div>
+    </section> <!-- Chicken -->
+    
+    <section id="beef" class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+    <div class="content-cell">
+    <h3 class="text-center">Beef</h3>
+    <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
 
-    <div class="collapse" id="myNavbar">
-      <ul class="nav navbar-nav visible-xs">
-        <li><a class="menu-item" href="#">Chicken</a></li>
-        <li><a class="menu-item" href="#">Beef</a></li> 
-        <li><a class="menu-item" href="#">Sushi</a></li> 
-      </ul>
+    <h3>Beef xxxxxxxxxxx</h3>
+    <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+
+    <a href="#top">Back To Top</a>
     </div>
+    </section> <!-- Beef -->
+    
+    <section id="sushi" class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+    <div class="content-cell">
+    <h3 class="text-center">Sushi</h3>
+    <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+    <h3>Sushi xxxxxxxxxxxxxxx</h3>
+    <p>
+   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
 
-  </div>
-</nav>
 
-<h1 class="main-title">Our Menu</h1>
-
-
-
-<div class="row">
-
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="content-box">
-      <p class="item-name">Chicken</p>
-      <p> Do not use the words of another person. This paragraph should be in your own words. Please be sure to proofread this paragraph before you submit it, to make sure it does not have spelling or grammatical errors. Do not use the words of another person. This paragraph should be in your own words. Please be sure to proofread this paragraph before you submit it, to make sure it does not have spelling or grammatical errors.Do not use the words of another person. This paragraph should be in your own words. Please be sure to proofread this paragraph before you submit it, to make sure it does not have spelling or grammatical errors.<a href="#top">(Back to Top)</a></p>
+    
+    <a href="#top">Back To Top</a>
     </div>
-  </div>
+    </section> <!-- Sushi -->
+  </div> <!-- .row -->  
+  </div> <!-- #main-content -->
 
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="content-box">
-      <p class="item-name">Beef</p>
-      <p>Do not use the words of another person. This paragraph should be in your own words. Please be sure to proofread this paragraph before you submit it, to make sure it does not have spelling or grammatical errors. Do not use the words of another person. This paragraph should be in your own words. Please be sure to proofread this paragraph before you submit it, to make sure it does not have spelling or grammatical errors.Do not use the words of another person. This paragraph should be in your own words. Please be sure to proofread this paragraph before you submit it, to make sure it does not have spelling or grammatical errors.<a href="#top">(Back to Top)</a></p>
-    </div>
-  </div>
-
-
-  <div class="col-lg-4 col-md-12 col-sm-12">
-    <div class="content-box">
-      <p class="item-name">Sushi</p>
-      <p>Do not use the words of another person. This paragraph should be in your own words. Please be sure to proofread this paragraph before you submit it, to make sure it does not have spelling or grammatical errors. Do not use the words of another person. This paragraph should be in your own words. Please be sure to proofread this paragraph before you submit it, to make sure it does not have spelling or grammatical errors.Do not use the words of another person. This paragraph should be in your own words. Please be sure to proofread this paragraph before you submit it, to make sure it does not have spelling or grammatical errors.<a href="#top">(Back to Top)</a></p>
-    </div>
-  </div>
-
-</div>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="jquery-1.11.3.min.js"></script>
+  <script src="bootstrap.min.js"></script>
 
 
-</body>
-</html>
+</body></html>
